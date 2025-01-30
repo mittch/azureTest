@@ -71,18 +71,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "azureTest:build"
+            "buildTarget": "azureTest:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "azureTest:build:production"
+              "buildTarget": "azureTest:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "azureTest:build"
+            "buildTarget": "azureTest:build"
           }
         },
         "test": {
