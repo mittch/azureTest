@@ -52,6 +52,8 @@
               "sourceMap": false,
               "namedChunks": false,
               "extractLicenses": true,
+              "prerender": false,
+              "ssr": false,
               "budgets": [
                 {
                   "type": "initial",
