@@ -8,12 +8,7 @@ import { MatCardModule } from '@angular/material/card';
   styleUrl: './page.component.scss'
 })
 export class PageComponent implements OnInit {
-  page = {
-    title: 'Home',
-    subtitle: 'Welcome mittch',
-    content: 'Here are some content',
-    image: 'assets/images/back.jpg'
-  };
+  image = 'assets/images/back.jpg'
 
   ngOnInit(): void { }
 
