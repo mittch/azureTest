@@ -7,10 +7,10 @@
                 ☰
             </button>
             <div class="dropdown" [class.show]="showMenu">
-                <a routerLink="/" routerLinkActive="active">Home</a>
-                <a routerLink="/about" routerLinkActive="active">About</a>
-                <a routerLink="/principles" routerLinkActive="active">Principles</a>
-                <a routerLink="/impressum" routerLinkActive="active">Impressum</a>
+                <a routerLink="/" routerLinkActive="active" (click)="showMenu = false">Home</a>
+                <a routerLink="/about" routerLinkActive="active" (click)="showMenu = false">About</a>
+                <a routerLink="/principles" routerLinkActive="active" (click)="showMenu = false">Principles</a>
+                <a routerLink="/impressum" routerLinkActive="active" (click)="showMenu = false">Impressum</a>
             </div>
         </div>
     </nav>
