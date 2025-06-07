@@ -1,25 +1,19 @@
-<nav>
-    <div class="desktop-menu"
-        style="display: flex; justify-content: space-between; padding: 10px; background-color: #f0f0f0;">
-        <div>
-            <a routerLink="/" routerLinkActive="active">Home</a> |
-            <a routerLink="/about" routerLinkActive="active">About</a> |
-            <a routerLink="/principles" routerLinkActive="active">Principles</a> |
-            <a routerLink="/impressum" routerLinkActive="active">Impressum</a>
+<div class="app-header">
+    <a class="title" style="display: flex; height: 38px;" routerLink="/" routerLinkActive="active">Christian
+        Mitterndorfer</a>
+    <nav>
+        <div class="mobile-menu">
+            <button (click)="toggleMenu()">
+                ☰
+            </button>
+            <div class="dropdown" [class.show]="showMenu">
+                <a routerLink="/" routerLinkActive="active">Home</a>
+                <a routerLink="/about" routerLinkActive="active">About</a>
+                <a routerLink="/principles" routerLinkActive="active">Principles</a>
+                <a routerLink="/impressum" routerLinkActive="active">Impressum</a>
+            </div>
         </div>
-    </div>
-
-    <div class="mobile-menu">
-        <button (click)="toggleMenu()">
-            ☰
-        </button>
-        <div class="dropdown" [class.show]="showMenu">
-            <a routerLink="/" routerLinkActive="active">Home</a>
-            <a routerLink="/about" routerLinkActive="active">About</a>
-            <a routerLink="/principles" routerLinkActive="active">Principles</a>
-            <a routerLink="/impressum" routerLinkActive="active">Impressum</a>
-        </div>
-    </div>
-</nav>
+    </nav>
+</div>
 
 <router-outlet></router-outlet>

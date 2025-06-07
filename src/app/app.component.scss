@@ -1,15 +1,19 @@
+a {
+    text-decoration: none;
+}
+
 nav {
-    .desktop-menu {
-        display: flex;
-        justify-content: space-between;
-        padding: 10px;
-        background-color: #f0f0f0;
-    }
+    float: right;
 
     .mobile-menu {
-        display: none;
+        display: block !important;
+        margin-right: auto; // Push burger to the left
+        position: relative;
 
         button {
+            position: relative;
+            z-index: 1100;
+            float: right;
             font-size: 24px;
             background: none;
             border: none;
@@ -17,6 +21,16 @@ nav {
         }
 
         .dropdown {
+            position: absolute;
+            top: 0;
+            left: 100%; // Place menu to the right of the button
+            min-width: 180px;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            z-index: 1000;
+            border-radius: 4px;
+            padding: 0;
+            margin: 0;
             display: none;
             flex-direction: column;
 
@@ -32,15 +46,29 @@ nav {
             }
         }
     }
+}
 
-    @media (max-width: 768px) {
-        .desktop-menu {
-            display: none !important;
-        }
+.app-header {
+    display: flex;
+    align-items: center; // vertical centering
+    padding: 10px;
+    flex-direction: row-reverse; // Title right, burger left
+    position: relative;
+    justify-content: center;
 
-        .mobile-menu {
-            display: block !important;
-        }
+    .title {
+        margin: 0 auto;
+        text-align: center;
+        flex: 1 1 auto;
+        display: flex;
+        align-items: center; // vertical centering
+        justify-content: right;
+        height: 38px;
     }
 
+    .menu-container {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
 }

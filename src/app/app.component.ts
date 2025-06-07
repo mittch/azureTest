@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   standalone: false
 })
 export class AppComponent {
-  title = 'azureTest';
+  title = 'mittch.at';
   showMenu = false;
 
   toggleMenu() {
