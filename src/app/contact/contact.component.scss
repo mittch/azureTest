@@ -1,19 +1,22 @@
 h1 {
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
+
 address {
-  font-style: normal;
-  line-height: 1.7;
-  background: #f9f9f9;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  max-width: 400px;
+    font-style: normal;
+    line-height: 1.7;
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    max-width: 400px;
 }
+
 address a {
-  color: #1976d2;
-  text-decoration: none;
+    color: #1976d2;
+    text-decoration: none;
 }
+
 address a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }

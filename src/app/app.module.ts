@@ -10,13 +10,13 @@ import { ContactComponent } from './contact/contact.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatCardModule,
-    RouterModule
+    RouterModule,
+    ContactComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
